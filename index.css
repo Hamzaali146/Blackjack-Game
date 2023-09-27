@@ -1,0 +1,94 @@
+body {
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    background-image: url("/images/bj.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: 700px;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Nunito Sans', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.row1 {
+    width: 100%;
+    height: 100px;
+    /* background-color: wheat; */
+}
+
+.row1_col1 {
+    width: 35%;
+    height: 100px;
+    float: left;
+    text-align: right;
+}
+
+.row1_col2 {
+    width: 65%;
+    height: 75px;
+    float: left;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.row1_col2 h1 {
+    display: inline;
+    color: #daa520;
+}
+
+.row2 {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    float: left;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+.row2_col1{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.row2_col2{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.row2_col3{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+#message-el {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.row3 {
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+button {
+    color: #013F6A;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-anchor: start;
+}
