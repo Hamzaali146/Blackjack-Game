@@ -2,7 +2,7 @@ let plname = prompt("Hey! What's Your name: ","User")
 let player = {
 
     name: "Per",
-    chips: 200
+    chips: 0
 }
 player.name = plname
 let record = 0
@@ -19,7 +19,6 @@ let gifEL= document.getElementById("myImage")
 let recordEl = document.getElementById("record-el")
 
 playerEl.textContent = player.name + ": $" + player.chips
-console.log(record)
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
@@ -54,6 +53,8 @@ function renderGame() {
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
+        player.chips+=200
+        playerEl.textContent = player.name + ": $" + player.chips
         gifEL.src="images/3.png"
         message = "You've got Blackjack!"
         hasBlackJack = true
