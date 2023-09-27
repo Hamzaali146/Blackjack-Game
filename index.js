@@ -51,7 +51,7 @@ function renderGame() {
     
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
-        message = "Do you want to draw a new card?"
+        message = "Dealer: Do you want to draw a new card?"
     } else if (sum === 21) {
         player.chips+=200
         playerEl.textContent = player.name + ": $" + player.chips
