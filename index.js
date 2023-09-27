@@ -40,7 +40,7 @@ function startGame() {
     cards = [firstCard, secondCard]
     sum = firstCard + secondCard
     record++
-    recordEl.textContent = "You have played "+record+" of Games!"
+    recordEl.textContent = "You have played "+record+" number of Games!"
     renderGame()
 }
 
