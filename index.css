@@ -87,9 +87,15 @@ button {
     padding-bottom: 10px;
     font-weight: bolder;
     border: none;
-    border-radius: 2px;
+    border-radius: 20px;
     margin-bottom: 2px;
     margin-top: 2px;
     text-anchor: start;
     cursor: pointer;
+}
+button:hover{
+    color: goldenrod;
+    background-color: #013F6A;
+    transition: all;
+    transition-duration: 500ms;
 }
