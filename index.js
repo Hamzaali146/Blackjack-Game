@@ -17,6 +17,8 @@ let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 let gifEL= document.getElementById("myImage")
 let recordEl = document.getElementById("record-el")
+let rules = document.getElementById("rules")
+let ruleEl =document.getElementById("rule-el")
 
 playerEl.textContent = player.name + ": $" + player.chips
 
@@ -32,6 +34,7 @@ function getRandomCard() {
 }
 
 function startGame() {
+    ruleEl.innerText=""
     gifEL.src="images/sunglass.png"
     isAlive = true
     let firstCard = getRandomCard()
@@ -68,6 +71,7 @@ function renderGame() {
 
 
 function newCard() {
+    ruleEl.innerHTML=""
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard()
         sum += card
@@ -75,3 +79,6 @@ function newCard() {
         renderGame()        
     }
 }
+rules.addEventListener("click",function(){
+    ruleEl.innerHTML = "If your first 2 cards add up to <strong> 21 </strong>(an Ace and a card valued 10), that's Blackjack! If they have any other total, decide whether you wish to 'draw' or 'stay'. You can continue to draw cards until you are happy with your hand."
+})
